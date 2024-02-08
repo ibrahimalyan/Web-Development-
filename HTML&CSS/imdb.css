@@ -1,0 +1,118 @@
+/* imdb.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Background color for the entire page */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+section.movie-details {
+    background-color: black; /* White background for movie details section */
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.movie-details h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px; /* Add margin to separate h1 from other elements */
+        font-weight: bold;
+
+}
+
+section.movie-details p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px; /* Add margin to separate paragraphs */
+    word-spacing: 5px; 
+}
+
+section.movie-details button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+section.movie-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee; /* Light gray background for image section */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+section.movie-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px 0 0; /* Updated margin to add space between the images */
+}
+
+section.summary-section {
+    flex-grow: 1; /* Allow the text section to take up remaining space */
+    background-color: #f0f0f0; /* Slightly darker gray background for summary section */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+section.summary-section p {
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+}
+
+section.article-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee; /* Light gray background for the section */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+section.article-section h2,
+section.article-section p {
+    flex-grow: 1; /* Allow the text section to take up remaining space */
+}
+
+section.article-section img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20px; /* Add some margin between the text and image */
+}
+
+/* Add styles as needed for each section */
