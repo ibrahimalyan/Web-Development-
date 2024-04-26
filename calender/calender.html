@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+</head>
+<body>
+    <div id="calendar">
+        <h1 id="monthAndYear"></h1>
+        <button id="prev"><</button>
+        <button id="next">></button>
+        <button id="today">Today</button>
+        <table id="calendarTable">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Calendar dates will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+    <div id="eventWindow" style="display: none;">
+        <h1 id="eventDate"></h1>
+        Start time: <input type="text" id="startTime"><br>
+        End time: <input type="text" id="endTime"><br>
+        Description: <input type="text" id="description"><br>
+        <button id="ok">OK</button>
+    </div>
+    
+    <script src="calendar.js"></script>
+</body>
+</html>

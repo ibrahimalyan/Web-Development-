@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#calendar {
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    text-align: center;
+}
+
+#monthAndYear {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#calendarTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendarTable th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#calendarTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Color days outside the current month in gray */
+#calendarTable .prevMonth,
+#calendarTable .nextMonth {
+    color: #ccc;
+}
+
+/* Mark current date in yellow */
+#calendarTable .currentDate {
+    background-color: yellow;
+}
+
+
+#prev, #next, #today {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#prev:hover, #next:hover, #today:hover {
+    background-color: #45a049;
+}
+
+#eventWindow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    z-index: 999;
+}
+
+input[type="time"], input[type="text"] {
+    display: block;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    padding: 5px;
+}
+
+#ok {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#ok:hover {
+    background-color: #45a049;
+}
